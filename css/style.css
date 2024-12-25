@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Nerko One", cursive;
+}
+
+body {
+    background-color: rgb(39, 43, 48);
+}
+
+header {
+    height: 200px;
+    background: linear-gradient(rgb(39, 43, 48), rgb(39, 43, 48));
+    background-position: center center;
+}
+
+.navbar {
+    background-color: #3A497B !important;
+    width: 70%;
+    border-radius: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 111;
+}
+
+.navbar .navbar-brand {
+    font-weight: 500 !important;
+    font-size: 25px !important;
+}
+
+.navbar .navbar-brand img {
+    width: 15%;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    transition: all 0.5s;
+}
+
+.navbar .active {
+    color: rgb(0, 153, 204) !important;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(0, 153, 204) !important;
+}
+
+.text-end {
+    background-color: #4A6792;
+    transition: all 0.5s;
+}
+
+
+
+.text-footer {
+    background-color: #32383E;
+}
+
+.parent .img-game {
+    filter: grayscale(70%);
+    transition: all 0.5s;
+}
+
+.parent {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.parent:hover {
+    transform: scale(1.1);
+}
+
+.parent:hover .text-end {
+    background-color: #0D6EFD;
+}
+
+.parent:hover .img-game {
+    filter: none
+}
+
+.details {
+    z-index: 222;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(39, 43, 48);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spiner{
+    z-index: 333;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(39, 43, 48 , 0.5);
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
